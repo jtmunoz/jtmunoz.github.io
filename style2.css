@@ -4,5 +4,12 @@ body {
 }
 h1 {
 	background-color: purple;
-	
+
+}
+img {
+	z-index: -1;
+}
+
+a {
+	padding: 20px;
 }
