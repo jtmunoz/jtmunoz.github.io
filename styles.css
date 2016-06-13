@@ -1,0 +1,20 @@
+body {
+	background-image: url("nature-photography-analog-camera-canon.jpg");
+	background-repeat: no-repeat;
+	background-position: right bottom;	
+}
+
+form {
+	margin: 2px;
+	padding: 30px;
+	border: 3px solid pink;
+}
+
+#mycameras{
+	background-color: blue;
+	font-family: helvetica;
+}
+
+p {
+	font-family: helvetica;
+}
