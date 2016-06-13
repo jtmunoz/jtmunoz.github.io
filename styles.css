@@ -1,8 +1,7 @@
 body {
 	background-image: url("nature-photography-analog-camera-canon.jpg");
 	background-repeat: no-repeat;
-	background-position: right bottom;
-	
+	background-position: right bottom;	
 }
 
 form {
@@ -13,4 +12,9 @@ form {
 
 #mycameras{
 	background-color: blue;
+	font-family: helvetica;
+}
+
+p {
+	font-family: helvetica;
 }
