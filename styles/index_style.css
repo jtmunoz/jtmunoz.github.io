@@ -1,0 +1,12 @@
+body {
+	margin: 10px;
+	padding: 5px;
+}
+
+div#welcome {
+	/*background: blue;*/
+	margin: auto;
+	text-align: center;
+	line-height: 2vh;
+	padding-top: 40vh;
+}
