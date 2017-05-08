@@ -12,10 +12,12 @@ h1 {
     left: 5%;
     right: 50%;
 }
+
 a {
 	padding: 20px;
 	color: orange;
 }
+
 div {
 	position: relative;
 	left: 25%;
