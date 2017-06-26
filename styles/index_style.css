@@ -4,9 +4,23 @@ body {
 }
 
 div#welcome {
-	/*background: blue;*/
 	margin: auto;
 	text-align: center;
 	line-height: 2vh;
-	padding-top: 40vh;
+	padding-top: 5vh;
+}
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 2vh; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+ul.navigation>li {
+    display: inline;
 }
