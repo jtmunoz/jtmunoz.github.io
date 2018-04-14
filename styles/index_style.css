@@ -18,6 +18,7 @@ ul.navigation {
   background-color: #f1f1f1;
   height: 2vh; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
+  top: 0;
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
@@ -30,35 +31,57 @@ ul.navigation > li {
   height: 95px;
 }
 
-p { font-family: 'nimbus_sans_lbold', Arial, sans-serif; }
+.thank-you-wrapper {
+  z-index: -10;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20vh;
+  left: 0;
+  right: 0;
+}
 
-.thank-you {
-  font-size: 7em;
-  color: white;
+.thank-you { 
+  font-family: 'nimbus_sans_lbold', Arial, sans-serif; 
+  margin: 0;
+  line-height:90px;
+  background:;
+}
+
+.single-stroke,
+.double-stroke{
+  font-size: 6em;
+  color: #fff;
   text-align: center;
-  -webkit-text-stroke: 2px #FF0000;
-  z-index: 0;
+  text-shadow:  1px 1px #FF0000, 1px -1px #ff0000, -1px 1px #ff0000, -1px -1px #ff0000;
+  -webkit-text-stroke: 1px #FF0000;
   position: relative;
   background: transparent;
-  letter-spacing: -6.5px;
+  z-index: 0;
+  letter-spacing: 4px;
 }
 
-.thank-you::before {
-  -webkit-text-stroke: 6px #FF0000;
+.single-stroke::before,
+.double-stroke::before,
+.double-stroke::after {
+  content: attr(title);
+  position: absolute; 
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+
+.single-stroke::before,
+.double-stroke::before {
   z-index: -1;
-  content: attr(title);
-  position: absolute;
-  /*left: 0;*/
-  letter-spacing: -6.5px; 
-  
+  text-shadow:  2px 2px #FF0000, 2px -2px #ff0000, -2px 2px #ff0000, -2px -2px #ff0000;
+  -webkit-text-stroke: 4px #FF0000; 
 }
 
-
-.thank-you::after {
-  -webkit-text-stroke: 7px #FF0000;
+.double-stroke::after {
   z-index: -2;
-  content: attr(title);
-  position: absolute;   
-  left: 139px;
-  letter-spacing: -6.5px;
+  text-shadow:  2px 2px #FF0000, 2px -2px #ff0000, -2px 2px #ff0000, -2px -2px #ff0000;
+  -webkit-text-stroke: 6px #FF0000;
 }
