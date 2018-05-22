@@ -26,10 +26,6 @@ ul.navigation > li {
   display: inline;
 }
 
-.spacer {
-  width: 100%;
-  height: 95px;
-}
 
 .thank-you-wrapper {
   z-index: -10;

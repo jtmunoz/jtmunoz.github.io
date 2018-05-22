@@ -4,41 +4,27 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet"  href="styles/map.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="javascript/map.js"></script>
 </head>
 <body>	
+	<header>
+		<ul class="navigation">
+			<li><a href="https://resume.creddle.io/resume/ayh08f6drzy" target="_blank">Resume</a></li>
+			<li>Mend</li>
+			<li><a href="/pages/projects/slackbot/">Slackbot</a></li>
+			<li>Tic Tac Toe</li>
+			<li>Counter</li>
+			<li><a href="/pages/projects/map/">Map</a></li>
+		</ul>
+	</header
 	<p>Recreating the map component from Mend.</p>
-	<p><button onclick="geoFindMe()">Show my location</button></p>
-	<div id="out"></div>
-	<script>
-		function geoFindMe() {
-  var output = document.getElementById("out");
-
-  if (!navigator.geolocation){
-    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
-    return;
-  }
-
-  function success(position) {
-    var latitude  = position.coords.latitude;
-    var longitude = position.coords.longitude;
-
-    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
-
-    var img = new Image();
-    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
-
-    output.appendChild(img);
-  }
-
-  function error() {
-    output.innerHTML = "Unable to retrieve your location";
-  }
-
-  output.innerHTML = "<p>Locating…</p>";
-
-  navigator.geolocation.getCurrentPosition(success, error);
-}
-	</script>
+	<p><button onclick="geoFindMe()">Get my location</button></p>
+	<div id="out" style="margin: 0 auto;"></div>
 </body>
 </html>
