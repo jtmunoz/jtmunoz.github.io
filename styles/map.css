@@ -1,1 +1,3 @@
+@import url('index_style.css');
+
 #out:not(p) {text-align: center;}

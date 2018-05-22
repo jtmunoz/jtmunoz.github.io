@@ -12,10 +12,10 @@ function geoFindMe() {
     output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
     var img = new Image();
     img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=1000x1000&sensor=false";
+    $('#out img').css("width", "50vw");
     output.appendChild(img);
   }
 
-  $('#out img').css("width", "50vw");
 
   function error() {
     output.innerHTML = "Unable to retrieve your location";
