@@ -6,7 +6,6 @@ function geoFindMe() {
   }
 
   function success(position) {
-    $()
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
     output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
