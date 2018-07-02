@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet"  href="styles/index_style.css" type="text/css">
+	<link rel="stylesheet" href="styles/stylesheet.css" type="text/css" charset="utf-8" />	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 	<title></title>
 </head>
 <body>
-	<form action="">
-	<input type="text">
-</form>
+	<section>
+		<div class="thank-you-wrapper">
+			<p class="thank-you single-stroke double-stroke" style=""></p>
+			<p class="thank-you single-stroke double-stroke" style=""></p>
+			<p class="thank-you single-stroke double-stroke" style=""></p>
+			<p class="thank-you single-stroke double-stroke" style=" color:#ff0000;"></p>
+			<p class="thank-you single-stroke double-stroke" style=""></p>
+			<p class="thank-you single-stroke double-stroke" style=""></p>
+			<p class="thank-you single-stroke double-stroke" style=""></p>
+		</div>
+		</div>
+		<div id="form-wrapper">
+			<form action="" id="stroke-form">
+				 <input type="text" name="word" placeholder="Type Your Name" id="stroke-input">
+				 <input type="submit">
+			</form>
+		</div>
+
+
+	</section>
+	<script>
+		$('#stroke-form').submit(function(e) {
+			e.preventDefault();
+			console.log(this);
+			var $val = $('input:first').val();
+			$val = $($val)
+			console.log($val)
+			$( ".thank-you-wrapper p" ).each(function( p ) {
+ 				$('p').text($val)
+			});
+		});
+	</script>
 </body>
 </html>
