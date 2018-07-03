@@ -36,10 +36,12 @@
 			e.preventDefault();
 			console.log(this);
 			var $val = $('input:first').val();
-			$val = $($val)
+			
 			console.log($val)
 			$( ".thank-you-wrapper p" ).each(function( p ) {
- 				$('p').text($val)
+ 				$('p').text($val).attr('title', function(){
+		 			return $(this).html();
+		  	});
 			});
 		});
 	</script>
