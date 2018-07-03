@@ -8,6 +8,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+    <script src="javascript/form.js"></script>
 	<title></title>
 </head>
 <body>
@@ -31,19 +32,6 @@
 
 
 	</section>
-	<script>
-		$('#stroke-form').submit(function(e) {
-			e.preventDefault();
-			console.log(this);
-			var $val = $('input:first').val();
-			
-			console.log($val)
-			$( ".thank-you-wrapper p" ).each(function( p ) {
- 				$('p').text($val).attr('title', function(){
-		 			return $(this).html();
-		  	});
-			});
-		});
-	</script>
+
 </body>
 </html>
