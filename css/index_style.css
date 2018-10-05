@@ -24,20 +24,30 @@ div#welcome {
 	padding-top: 5vh;
 }
 
+nav {
+  min-height: 20px;
+  height: 100%;
+}
+
 ul.navigation {
   list-style-type: none;
   margin: 0;
   padding: 5px;
   width: 100%;
   background-color: #f1f1f1;
-  height: 2vh; 
+  min-height: 20px; 
   position: fixed; 
   top: 0;
   overflow: auto; 
 }
 
-ul.navigation > li {
-  display: inline;
+ul.navigation li {
+  float: left;
+}
+
+ul.navigation li a {
+  display: block;
+  padding: 8px;
 }
 
 
