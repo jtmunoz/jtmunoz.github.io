@@ -24,10 +24,7 @@ div#welcome {
 	padding-top: 5vh;
 }
 
-nav {
-  min-height: 20px;
-  height: 100%;
-}
+
 
 ul.navigation {
   list-style-type: none;
@@ -42,7 +39,7 @@ ul.navigation {
 }
 
 ul.navigation li {
-  float: left;
+  float: right;
 }
 
 ul.navigation li a {
