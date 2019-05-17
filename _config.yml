@@ -1,3 +1,3 @@
 name: Jordan Muñoz, Portfolio
 markdown: kramdown
-theme: jekyll-uikit
+# remote_theme: "jpasholk/jekyll-uikit"
