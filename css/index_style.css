@@ -14,7 +14,6 @@ html {
 
 body {
 	margin: 10px;
-	padding: 5px;
 }
 
 div#welcome {
@@ -23,8 +22,6 @@ div#welcome {
 	line-height: 2vh;
 	padding-top: 5vh;
 }
-
-
 
 ul.navigation {
   list-style-type: none;
