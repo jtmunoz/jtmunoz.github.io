@@ -1,0 +1,10 @@
+---
+---
+
+@import "uikit/scss/uikit-mixins.scss";
+
+// your custom code goes here, e.g. mixins, variables
+$global-link-color: #DA7D02;
+
+@import "uikit/scss/uikit.scss";
+@import "uikit/scss/components/autocomplete.scss";
