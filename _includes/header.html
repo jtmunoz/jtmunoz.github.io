@@ -1,5 +1,5 @@
 <header id="header">
-	<nav class="uk-navbar-container" uk-navbar>
+	<nav class="uk-navbar-container uk-visible@s" uk-navbar>
 		<div class="uk-navbar-left">
 			<ul class="uk-navbar-nav">
 				<li class="uk-active"><a href="/">Home</a></li>
@@ -8,7 +8,18 @@
 				<li><a href="/projects">Projects</a></li>
 			</ul>
 		</div>
-	</nav>	
+	</nav>
+	<a href="#my-id" uk-toggle><span uk-icon="menu"></span></a>
+	<div id="my-id" uk-offcanvas>
+	    <div class="uk-offcanvas-bar">
+	        <ul class="uk-nav uk-nav-offcanvas">
+				<li class="uk-active"><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/cv">CV</a></li>
+				<li><a href="/projects">Projects</a></li>        	
+	        </ul>
+	    </div>
+	</div>
 </header>	
 
 
